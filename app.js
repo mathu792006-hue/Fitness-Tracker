@@ -221,6 +221,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function editActivity(id) {
+        
         const activity = StorageManager.getActivityById(id);
         if (!activity) {
             showToast('Activity not found!', 'error');
